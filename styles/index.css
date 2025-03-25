@@ -41,6 +41,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  flex-direction: column;
 }
 
 .top,
@@ -102,4 +103,16 @@ h1 {
 
 .pic-cargo {
   margin-left: 15px;
+}
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-info a {
+  color: #f0f2f5;
+  font-size: 12px;
+  text-decoration: none;
 }
