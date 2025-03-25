@@ -132,3 +132,14 @@ h1 {
 .go_to_pic_cargo:hover {
   color: #ff9999;
 }
+
+.box__info__stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box__info__stat i {
+  font-size: 25px;
+  margin-right: 10px;
+}

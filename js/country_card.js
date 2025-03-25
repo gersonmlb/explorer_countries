@@ -61,6 +61,7 @@ class CountryCard extends HTMLElement {
                       
                       <a href="https://www.google.com/maps/place/${this.getAttribute('name')}" target="_blank" class="map-link">
                           Ver en Google Maps
+                          <i class="bi bi-geo-fill"></i>
                       </a>
                   </div>
               </div>
@@ -83,8 +84,18 @@ class CountryCard extends HTMLElement {
               <img src="${this.getAttribute('flag')}" alt="Bandera de ${this.getAttribute('name')}" class="flag_svg">
               <div class="info__country">
                   <h3 class="country_name">${this.getAttribute('name')}</h3>
-                  <p>Capital: ${this.getAttribute('capital')}</p>
-                  <p>Población: ${this.getAttribute('population')}</p>
+                  <div class="box__info">
+                    <div class="div__info"><span class="span_title">Ciudad Capital</span> <p>${this.getAttribute('capital')}</p></div>
+                    <i class="bi bi-globe-americas"></i>
+                  </div>
+                  <div class="box__info">
+                    <div class="div__info"><span class="span_title">Idioma</span> <p>${this.getAttribute('language')}</p></div>
+                    <i class="bi bi-megaphone-fill"></i>
+                  </div>
+                  <div class="box__info">
+                    <div class="div__info"><span class="span_title">Población</span> <p>${this.getAttribute('population')}</p></div>
+                    <i class="bi bi-cookie"></i>
+                  </div>
               </div>
           </div>
       `;
