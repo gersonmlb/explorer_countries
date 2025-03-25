@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2149/2149053.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorador de Países</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <div class="top">La lista de paises tiene una carga infinita con toda la data de <a href="https://restcountries.com/v3.1/all">restcountries.com</a></div>
+  <header>
+    <div class="header__icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/2149/2149053.png" alt="icon" width="100" height="100">
+    </div>
+    <div class="header__title">
+      Explorador de Países
+    </div>
+  </header>
+  <section class="content">
+    <h1>Explorador de Países</h1>
+    <div class="stats-container">
+      <div class="stat-card">
+        <h3>Total de Países</h3>
+        <p id="totalCountries">Cargando...</p>
+      </div>
+      <div class="stat-card">
+        <h3>Continentes</h3>
+        <p id="totalContinents">Cargando...</p>
+      </div>
+      <div class="stat-card">
+        <h3>Población Mundial</h3>
+        <p id="totalPopulation">Cargando...</p>
+      </div>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar país...">
+      <button id="searchBtn">Buscar</button>
+    </div>
+    <div class="main-content">
+      <div class="grid countries-grid" id="countries-container">
+        <div class="loader">Cargando países...</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/2149/2149053.png" alt="icon" width="100" height="100">
+      <span>Requested by:</span>
+      <a href="https://www.pic-cargo.com/" class="pic-cargo">
+        <img src="https://www.pic-cargo.com/wp-content/uploads/2024/02/pic-cargo.png" alt="pic-cargo" width="100">
+      </a>
+    </div>
+  </footer>
+  <div class="bottom">Copyright ©GM 2024.</div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 id="modalTitle">Información del País</h2>
+        <button class="close-btn" id="closeModal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+</body>
+<script src="js/states.js"></script>
+<script src="js/dom_elements.js"></script>
+<script src="js/fetch_countries.js"></script>
+<script src="js/load_countries.js"></script>
+<script src="js/filter_countries.js"></script>
+<script src="js/update_statistics.js"></script>
+<script src="js/country_card.js"></script>
+<script src="js/index.js"></script>
+
+</html>
