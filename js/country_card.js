@@ -85,15 +85,24 @@ class CountryCard extends HTMLElement {
               <div class="info__country">
                   <h3 class="country_name">${this.getAttribute('name')}</h3>
                   <div class="box__info">
-                    <div class="div__info"><span class="span_title">Ciudad Capital</span> <p>${this.getAttribute('capital')}</p></div>
+                    <div class="div__info">
+                        <span class="span_title">Ciudad Capital</span> 
+                        <p>${this.getAttribute('capital')}</p>
+                    </div>
                     <i class="bi bi-globe-americas"></i>
                   </div>
                   <div class="box__info">
-                    <div class="div__info"><span class="span_title">Idioma</span> <p>${this.getAttribute('language')}</p></div>
+                    <div class="div__info">
+                        <span class="span_title">Idioma</span>
+                        <p>${this.getAttribute('language')}</p>
+                    </div>
                     <i class="bi bi-megaphone-fill"></i>
                   </div>
                   <div class="box__info">
-                    <div class="div__info"><span class="span_title">Población</span> <p>${this.getAttribute('population')}</p></div>
+                    <div class="div__info">
+                        <span class="span_title">Población</span>
+                        <p>${this.getAttribute('population')}</p>
+                    </div>
                     <i class="bi bi-cookie"></i>
                   </div>
               </div>
