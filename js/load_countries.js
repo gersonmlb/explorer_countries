@@ -63,6 +63,7 @@ async function loadCountries() {
     card.setAttribute('official', country.name.official);
     card.setAttribute('subregion', country.subregion || not_available);
     card.setAttribute('languages', country.languages ? Object.values(country.languages).join(', ') : not_available);
+    card.setAttribute('language', Object.values(country.languages)[0]);
     card.setAttribute('currencies', country.currencies ? Object.values(country.currencies).map(c => `${c.name} (${c.symbol || not_available})`).join(', ') : not_available);
     card.setAttribute('border', attributeBorders(country));
     countriesContainer.appendChild(card);
